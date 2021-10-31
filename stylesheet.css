@@ -1,39 +1,294 @@
-ul {
-  List-style: none;
-  margin: 0px;
-  padding: 60px 0px;
-  text-align: center;
+
+/*レイアウト崩れ防止策：padding＋要素幅<100%になるよう、要素幅の合計にpaddingとborderを含むようにするため、HTML全体にbox-sizing:border-box;を適用*/
+*{
+  box-sizing:border-box;
+  }
+/*bodyタグ全体に適用*/
+  body{
+margin:0px auto;
+font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+color:#333333;
+}
+.QR{
+  width: 100px;
+  height: 100px;
+  }
+
+h4 {
+  color:pink;
+  }
+
+h5 {
+  color:pink;
+  }
+
+h6 {
+  color:pink;
+  }
+
+a{
+  text-decoration:none;
+  line-height:2;
+  }
+
+a:hover{
+  text-decoration:underline;
+  }
+
+/*未アクセスリンク（googleブルー）*/
+a:link {
+  color:#1A0DAB;
+  }
+
+ul{
+  list-style:none;
+  }
+
+.clear{
+  clear:left;
+  }
+/*画面幅が大きい時(1170px以下）のレイアウト調整*/
+.container{
+  max-width:1170px;
+  width:100%;
+  padding:0 15px;
+  margin:0 auto;
+  }
+
+.top-wrapper{
+  opacity:0.8;
+  padding:180px 0 100px 0;
+  background-image:url(https://tkby.github.io/Learning-by-Viscuit.github.io/top_img.jpg);
+  background-size:cover;
+  color:white;
+  text-align:center;
+ }
+
+.top-wrapper h1{
+  opacity:0.9;
+  font-size:55px;
+  letter-spacong:5px;
+  }
+
+.top-wrapper h2{
+  opacity:0.9;
+  font-size:22px;
+  letter-spacong:5px;
+  }
+
+.top-wrapper h3{
+  opacity:0.9;
+  font-size:21px;
+  letter-spacong:5px;
+  }
+
+.btn-wrapper p{
+  margin:10px 0;
+  }
+
+.top-wrapper p{
+  opacity:0.9;
+  }
+
+.btn-wrapper{
+  text-align:center;
+  margin:20px 0;
+  }
+
+.signup{
+  background-color:#239b76;
+  }
+
+.facebook {
+  background-color: #1877f2;
+  margin-right:10px;
+  }
+
+.twitter{
+  background-color:#55acee;
+  }
+
+.btn{
+  padding:8px 24px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  border-radius:4px;
+  text-align:center;
+  }
+
+.btn:hover{
+  opacity:1;
+  }
+
+.fa{
+  margin-right:5px;
+  }
+  
+/*headerのみに適用*/
+header {
+  height: 75px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
 }
 
-li {
-  color: white;
-  height: 80px;
-  line-height: 80px;
-}
-.flex-list{
-  display:flex;
+/*LbVのロゴのみに適用*/
+.header-left{
+  float:left;
+  }
+
+.logo{
+  width:100px;
+    margin-top:5px;
+  }
+/*.header-list{
+   float:left;
+   }
+.header-list li{
+   float:left;
+   padding:33px 20px;
+ }*/
+
+.header-right{
+  float:right;
+  margin-right:-25px;
+  }
+
+.header-right a{
+  line-height:65px;
+  padding:0 25px;
+  color:white;
+  display:block;
+  float:left;
+  transition:all 0.5s;
+  }
+
+.header-right a:hover{
+  background-color:rgba(255,255,255,0.3);
+  }
+/*menu-iconのCSS*/
+.menu-icon{
+  color:white;
+  float:right;
+  font-size:25px;
+  padding:21px 0;
+  display:none;
+  }
+
+.lesson-wrapper{
+  padding-bottom:80px;
+  padding-left:5%;
+  padding-right:5%;
+  background-color:#f7f7f7;
+  text-align:center;
+  } 
+
+ .heading{
+   padding-top:80px;
+   padding-bottom:50px;
+   color:#5f5d60;
+   }
+
+.heading h2{
+  font-weight:normal;
+  }
+
+ .text-contents{
+   width:80%;
+   display:inline-block;
+   margin-top:15px;
+   font-size:13px;
+   color:#b3aeb5;
+   }
+
+ .heading h3{
+   font-weight:normal;
+   }
   
-}
-.flex-list li{
-  flex:auto;
+ .message-wrapper{
+   border-bottom:1px solid #eee;
+   padding-bottom:80px;
+   text-align:center;
+   }
+
+  .message{
+    padding:15px 40px;
+    background-color:#5dca88;
+    cursor: pointer;
+    box-shadow:0 7px #1a7940;
+    }
+
+ .message:active{
+   position:relative;
+   top:7px;
+   box-shadow:none;
+   }
+  
+  footer p{
+    color:#b3aeb5;
+    font-size:12px;
+      }
+
+  footer{
+    padding-top:30px;
+    padding-bottom:20px;
+    
+    }
+
+.footer-logo{
+  float:left;
+  
+  }
+
+ .footer-list{
+  float:right;
+  
+  }
  
-}
-@media(max-width:1000px){
-  .flex-list{
-  flex-wrap:flex;
+.lesson{
+  float:left;
+  width:11%;
+  }
+ 
+ .lesson-icon{
+   position:relative;
   }
   
-   .flex-list li{
-    width:50%;
+ .lesson-icon p{
+  position:absolute;
+  top:44%;
+  width:100%;
+  color:#333333;
   }
-  /*スマホ向け*/
-  @media(max-width:670px){
-    .flex-list {
-      flex-direction: column;
-    }
-    .flex-list li{
-      margin:0 auto;
-    }
+
+ p.CC img {
+   width:100px;
+   }
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background:#668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  }
+
+.btn-square:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+  }
+
+.POD {
+  text-align:center;
+  }
+
+
   
   
-}
+
