@@ -1,18 +1,39 @@
-.flex list{
+ul {
+  List-style: none;
+  margin: 0px;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+li {
+  color: white;
+  height: 80px;
+  line-height: 80px;
+}
+.flex-list{
   display:flex;
   
 }
-.flex list li{
+.flex-list li{
   flex:auto;
  
 }
 @media(max-width:1000px){
-  .flex list{
+  .flex-list{
   flex-wrap:flex;
   }
   
    .flex-list li{
     width:50%;
   }
+  /*スマホ向け*/
+  @media(max-width:670px){
+    .flex-list {
+      flex-direction: column;
+    }
+    .flex-list li{
+      margin:0 auto;
+    }
+  
   
 }
