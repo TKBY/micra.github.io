@@ -292,10 +292,10 @@ header {
 
 table {
    border-collapse: collapse; /* 隣り合うセルの線を結合 */
-   border: 2px solid black;    /* 外側は青色の実線2px */
+   border: 1px solid black;    /* 外側は青色の実線2px */
 }
 td {
-   border: 2px solid black;    /* 内側は青色の実線1px */
+   border: 1px solid black;    /* 内側は青色の実線1px */
 }
   
  
