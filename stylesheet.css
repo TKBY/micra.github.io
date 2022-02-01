@@ -295,17 +295,7 @@ table {
    border: 2px solid black;    /* 外側は青色の実線2px */
 }
 td {
-   border: 1px solid black;    /* 内側は青色の実線1px */
+   border: 2px solid black;    /* 内側は青色の実線1px */
 }
   
-  table.border1{
-  border:1px solid #333;
-  th{
-    border:1px solid #333;
-  }
-  td{
-    border:1px solid #333;
-  }
-}
-
-
+ 
