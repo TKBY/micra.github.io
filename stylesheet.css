@@ -298,5 +298,14 @@ td {
    border: 1px solid black;    /* 内側は青色の実線1px */
 }
   
-  
+  table.border1{
+  border:1px solid #333;
+  th{
+    border:1px solid #333;
+  }
+  td{
+    border:1px solid #333;
+  }
+}
+
 
